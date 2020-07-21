@@ -9,197 +9,220 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+
+        img {
+            max-width: 100%;
+        }
+
+        .small-table-text {
+            font-size: 18px;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Общение внутри команды</h1>
+        <p>Кристина Василевич</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+        <h2>Общение внутри команды</h2>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/cover.png" alt="People working with computers">
         </figure>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
-                color: white;
+                color: #000000;
                 text-align: center;
                 font-size: 70px;
             }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
+            #cover .cover {
+                opacity: 0.4;
             }
         </style>
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2>Содержание</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Культура доверия, прозрачности и уважения</li>
+            <li>Нездоровая психологическая обстановка: как распознать и что делать</li>
+            <li>Интроверты в команде</li>
+            <li>Проявление заботы к членам команды</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
     <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <h2>1. Культура доверия, прозрачности и уважения</h2>
+        <p>Культура доверия  - культура общения, в которой сотрудники не полны страха и не пытаются скрыть свои ошибки, чтобы избежать позора либо наказания. Другими словами, высказывание и обучение на ошибках поощряется, даже вознаграждается.</p>
     </section>
 
     <section class="slide">
-        <h2>Two columns if you like</h2>
+        <p>Социально-психологический климат (СПК) - это относительно устойчивое психологическое отношение членов команды, проявляемое в разных сферах работы. Социально-психологический климат оказывает влияние на межличностные отношения членов команды, отношение служащих к собственной работе и иным сферам деятельности, чувственные отношения и групповую работу, а также личные ценностные ориентации.</p>
+    </section>
+
+    <section class="slide" id="slide-5">
+        <h3>Факторы, определяющие СПК:</h3>
+        <ol>
+            <li>Глобальная макросреда</li>
+            <li>Локальная макросреда</li>
+            <li>Физический микроклимат</li>
+            <li>Удовлетворенность работой</li>
+            <li>Характер выполняемой деятельности</li>
+            <li>Организация совместной деятельности</li>
+            <li>Психологическая совместимость</li>
+            <li>Характер коммуникаций в организации</li>
+            <li><b>Стиль руководства</b></li>
+        </ol>
+        <style>
+            #slide-5 ol {
+                column-count: 2;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h3>Создание благоприятного СПК (со стороны лида): </h3>
+        <ol>
+            <li>Признавать, что вы неправы</li>
+            <li>Узнавать мнение всей команды</li>
+            <li>Давать обратную связь на вопросы/предложения/жалобы</li>
+            <li>Прощать за ошибки</li>
+            <li>Подавать пример</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h3>Создание благоприятного СПК (всей командой): </h3>
+        <ol class="columns two">
+            <li><a href="https://library.gv.com/how-anxiety-parties-made-our-team-more-vulnerable-and-more-effective-5d8cdda4680" target="_blank">Проведение “anxiety party”</a></li>
+            <li><a href="https://cvdl.ben.edu/blog/creating-space-for-speaking-up/" target="_blank">Использование "метода карточек"</a></li>
+        </ol>
         <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <img src="pictures/anxiety-party.jpg" alt="">
+            <img src="pictures/cards-method.jpg" alt="">
         </div>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
+        <h2>2. Нездоровая психологическая обстановка</h2>
         <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
+            <tr scope="row">
+                <th>Благоприятный СПК</th>
+                <th>Неблагоприятный СПК</th>
+            </tr>
+            <tr scope="row" class="small-table-text">
+                <td>
+                    <ol>
+                        <li>Бодрое, жизнерадостное взаимоотношение, которое строится на взаимной помощи и доброжелательности</li>
+                        <li>Существуют нормы справедливого отношения ко всем + поддержка новичков</li>
+                        <li>Высоко ценятся принципиальность, честность, трудолюбие, бескорыстие</li>
+                        <li>Члены команды активны, энергичны, добиваются высоких результатов</li>
+                        <li>Успехи и неудачи вызывают сопереживание и участие</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Подавленное настроение, пессимизм, повышена конфликтность, агрессия друг к другу</li>
+                        <li>Есть привелегированные, высмеивание более слабых</li>
+                        <li>Члены команды инертны, пассивны, каждый старается обособиться</li>
+                        <li>Успехи и неудачи оставляют равнодушными остальных либо вызывают зависть</li>
+                    </ol>
+                </td>
+            </tr>
         </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
+        <h3>3 этапа улучшения СПК</h3>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li class="next">Борьба с проявленным уровнем конфликтности</li>
+            <li class="next">Увеличение общей удовлетворенности трудом</li>
+            <li class="next">Формирование креативного климата в команде</li>
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <section class="slide">
+        <h2>Синдром эмоционального выгорания (СЭВ)</h2>
+        <p>Синдром эмоционального выгорания (burn-out) представляет собой состояние эмоционального, психического, физического истощения, развивающегося как результат хронического неразрешенного стресса на рабочем месте. </p>
+    </section>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+    <section class="slide" id="slide-11">
+        <h3>Основные симптомы СЭВ</h3>
+        <ul class="columns two">
+            <li>Ухудшение отношений с коллегами и родственниками</li>
+            <li>Нарастающий негативизм по отношению к коллегам</li>
+            <li>Злоупотребление алкоголем, никотином, кофеином</li>
+            <li>Утрата чувства юмора, постоянное чувство неудачи и вины</li>
+            <li>Повышенная раздражительность - и на работе, и дома</li>
+            <li>Упорное желание переменить род занятий</li>
+            <li>Возникающая рассеянность</li>
+            <li>Нарушение сна</li>
+            <li>Обостренная восприимчивость к инфекционным заболеваниям</li>
+            <li>Повышенная утомляемость, чувство усталости</li>
+        </ul>
+        <style>
+            #slide-11 {
+                padding-top: 40px;
+            }
+            #slide-11 h3 {
+                margin-top: 0;
+            }
+            #slide-11 .columns.two {
+                grid-column-gap: 50px;
             }
         </style>
     </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+    <section class="slide">
+        <h2>Социально-психологические методики определения СПК</h2>
+        <ol>
+            <li><a href="https://www.psyoffice.ru/1-118-191.htm" target="_blank">Методика изучения социально-психологического климата в трудовом коллективе О.С. Михалюка и А.Ю. Шалыто.</a></li>
+            <li><a href="http://test-metod.ru/index.php/metodiki-i-testy/3/55-metodika-opredeleniya-stilya-rukovodstva-trudovym-kollektivom-v-p-zakharova-i-a-l-zhuravleva" target="_blank">Анализ стиля руководства трудовым коллективом по методике В.П. Захарова и А.Л. Журавлева </a></li>
+            <li><a href="http://www.nekrasovspb.ru/doc/18tomas-kilmen.pdf" target="_blank">Методика Томаса - Килманна на выявление ведущего поведения в конфликтной ситуации</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>3. Интроверты в команде</h2>
+        <h3>Развитие эмоционального интеллекта</h3>
+        <p>периодические разговоры 1-1, не всегда личные, лучше через мессенджеры; обязательное развитие доверия; для управленца - развитие навыков осознанности и эмоционального интеллекта, чтение невербальных знаков, для всех  - развитие эмоционального интеллекта. </p>
+    </section>
+
+    <section class="slide">
+        <h3>Фокус на сильные стороны каждого члена команды</h3>
+        <p>акцент на сильной стороне каждого члена команды, распределение обязанностей, соответствующее сильным сторонам каждого, не включая определение поведенческого типа; вариант определения - создание чарта, в который сотрудники сами вписывают свои сильные стороны, дальнейшая обязанность лида - развитие этих сторон, адаптация талантов к рабочим обязанностям</p>
+    </section>
+
+    <section class="slide">
+        <h3>Создание благоприятной обстановки</h3>
+        <p>создание комфортного рабочего места - спокойного, без суеты/беготни вокруг; заранее планировать встречи (личные/общие) - дать возможность морально подготовиться; при встречах без необходимости не поднимать на ноги - создает дополнительный стресс.</p>
+    </section>
+
+    <section class="slide">
+        <h3>4. Проявление заботы к членам команды</h3>
+        <ul>
+            <li class="next">Принцип «одна компания, одно видение»</li>
+            <li class="next">Подчеркивать личную значимость сотрудников</li>
+            <li class="next">Развивать дружеские отношения и диалог между людьми</li>
+            <li class="next">Признавать личный вклад сотрудников</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Источники</h2>
+        <ol>
+            <li><a href="https://slackhq.com/psychological-safety-building-trust-teams" target="_blank">Psychological safety first: building trust among teams</a></li>
+            <li><a href="https://library.gv.com/how-anxiety-parties-made-our-team-more-vulnerable-and-more-effective-5d8cdda4680" target="_blank">How “Anxiety Parties” made our team more vulnerable and more effective</a></li>
+            <li><a href="https://cvdl.ben.edu/blog/creating-space-for-speaking-up/" target="_blank">Creating Space for Speaking Up</a></li>
+            <li><a href="https://cyberleninka.ru/article/n/suschnost-sotsialno-psihologicheskogo-klimata-v-organizatsii-i-osnovy-ego-formirovaniya" target="_blank">СУЩНОСТЬ СОЦИАЛЬНО - ПСИХОЛОГИЧЕСКОГО КЛИМАТА В ОРГАНИЗАЦИИ И ОСНОВЫ ЕГО ФОРМИРОВАНИЯ</a></li>
+            <li><a href="https://www.entrepreneur.com/article/302116" target="_blank">Introversion Is Not A Weakness, So Why Are You Treating It Like One?</a></li>
+            <li><a href="http://www.career-st.ru/specialist/docladi/4/print" target="_blank">Повышение качества трудовой жизни работника через формирование профессионально-личностного комфорта</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ol>
+    </section>
 
     <div class="progress"></div>
 
